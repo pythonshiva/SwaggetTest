@@ -1,0 +1,37 @@
+swagger: '2.0'
+info:
+  version: '2019-12-06T08:00:15Z'
+  title: bussiness_wire_hello_world-API
+host: 7pga5cb006.execute-api.ap-south-1.amazonaws.com
+basePath: /default
+schemes:
+  - https
+paths:
+  /bussiness_wire_hello_world:
+    get:
+      produces:
+        - application/json
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          type: string
+      responses:
+        '200':
+          description: 200 response
+          schema:
+            $ref: '#/definitions/Empty'
+          headers:
+            Access-Control-Allow-Origin:
+              type: string
+      security:
+        - api_key: []
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: x-api-key
+    in: header
+definitions:
+  Empty:
+    type: object
+    title: Empty Schema
