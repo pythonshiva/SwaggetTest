@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: '2019-12-06T08:00:15Z'
-  title: bussiness_wire_hello_world-API
+  title: business_wire_hello_world-API
 host: 7pga5cb006.execute-api.ap-south-1.amazonaws.com
 basePath: /default
 schemes:
